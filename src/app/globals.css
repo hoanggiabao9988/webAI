@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #212121;
+  color: #ececec;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #404040; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+/* Markdown styles in chat */
+.prose-chat p { margin: 0 0 0.75rem 0; }
+.prose-chat p:last-child { margin-bottom: 0; }
+.prose-chat pre {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+  font-size: 0.85rem;
+}
+.prose-chat code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  background: #2a2a2a;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.875em;
+}
+.prose-chat pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+.prose-chat ul { padding-left: 1.5rem; margin: 0.5rem 0; }
+.prose-chat ol { padding-left: 1.5rem; margin: 0.5rem 0; }
+.prose-chat li { margin: 0.25rem 0; }
+.prose-chat h1, .prose-chat h2, .prose-chat h3 { font-weight: 600; margin: 1rem 0 0.5rem; }
+.prose-chat strong { font-weight: 600; color: #fff; }
+.prose-chat a { color: #60a5fa; text-decoration: underline; }
+.prose-chat blockquote {
+  border-left: 3px solid #444;
+  padding-left: 1rem;
+  color: #aaa;
+  margin: 0.5rem 0;
+}
+.prose-chat table { border-collapse: collapse; width: 100%; margin: 0.75rem 0; }
+.prose-chat th, .prose-chat td { border: 1px solid #333; padding: 0.5rem 0.75rem; text-align: left; }
+.prose-chat th { background: #2a2a2a; font-weight: 600; }
